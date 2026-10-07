@@ -6,19 +6,13 @@ public class StudiKasus2_24 {
         System.out.println("Nama mahasiswa :");
         String namaMahasiswa= scn.next();
         System.out.println("Jenis kegiatan (BELMAWA/BAKORMA/MANDIRI/PKM/LAINNYA) :");
-        String jenisKegiatan= scn.next();
+        String jenisKegiatan= scn.next().toLowerCase();
         System.out.println("Jumlah dokumen :");
         int jumlahDoc=scn.nextInt();
-        System.out.println("peringkatJuara :");
+        System.out.println("peringkat Juara :");
         int peringkatJuara= scn.nextInt();
         System.out.println("Status :");
-        int statusPendanaan= scn.nextInt();
-
-        System.out.println("Nama mahasiswa : "+ namaMahasiswa);
-        System.out.println("Jenis kegiatan (BELMAWA/BAKORMA/MANDIRI/PKM/LAINNYA) :" + jenisKegiatan);
-        System.out.println("Jumlah dokumen : "+ jumlahDoc);
-        System.out.println("Peringkat peringkatJuara : "+ peringkatJuara);
-        System.out.println("Status : "+ statusPendanaan);
+        int statusPendanaan= scn.nextInt();        
 
         if (jumlahDoc == 4) {
             if (jenisKegiatan.equals("belmawa") || jenisKegiatan.equals("bakorma")
@@ -45,7 +39,5 @@ public class StudiKasus2_24 {
             System.out.println("Status : Dokumen tidak lengkap (kurang " + (4 - jumlahDoc)
                     + " dokumen). Dana penghargaan tidak diberikan.");
         }
-
-        scn.close();
     }
 }
