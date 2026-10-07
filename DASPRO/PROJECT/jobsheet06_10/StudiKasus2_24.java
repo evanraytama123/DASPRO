@@ -4,9 +4,9 @@ public class StudiKasus2_24 {
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
         System.out.println("Nama mahasiswa :");
-        String namaMahasiswa= scn.next();
+        String namaMahasiswa= scn.nextLine();
         System.out.println("Jenis kegiatan (BELMAWA/BAKORMA/MANDIRI/PKM/LAINNYA) :");
-        String jenisKegiatan= scn.next().toLowerCase();
+        String jenisKegiatan= scn.nextLine().toLowerCase();
         System.out.println("Jumlah dokumen :");
         int jumlahDoc=scn.nextInt();
         System.out.println("peringkat Juara :");
